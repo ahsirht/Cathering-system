@@ -1,0 +1,63 @@
+.login {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  height: 88vh;
+}
+
+.login .left-wrapper {
+  background-color: #56b3701f; /* #eeffec; */
+  height: 88vh;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.login .left-wrapper h3 {
+  white-space: normal; /* Use normal to wrap text */
+}
+
+.login .left-wrapper .login-branding {
+  width: 18rem !important;
+  height: 5rem !important;
+}
+
+.login .left-wrapper .login-image {
+  width: 26rem !important;
+  height: 20rem !important;
+  margin-top: 3rem;
+}
+
+.login .right-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .right-wrapper > div {
+  width: 30rem;
+}
+
+.login .right-wrapper .login-title {
+  font-size: 1.85rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .login .left-wrapper {
+    display: none;
+  }
+
+  .login .right-wrapper {
+    width: 100vw;
+  }
+
+  .login .right-wrapper > div {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 35rem;
+    border: 1px #80808063 solid;
+    padding: 1rem 3em 2em 3rem;
+    border-radius: 1rem;
+  }
+}
